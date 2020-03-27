@@ -1,0 +1,252 @@
+*{margin: 0;padding: 0;}
+.pc-tab {
+  height: 100%;
+  width: 100%;
+}
+body{
+  background :#e0ecef;
+  /*background: linear-gradient(50deg, blue, orange );*/
+}
+
+.menup {
+  width: 48px;
+  height: 48px;
+  position: fixed;
+  background: white;
+  box-shadow: 0px 0px 5px #818181;
+  border-radius: 50%;
+  margin-top: 4px;
+  margin-left: 4px;
+}
+.menup #spn1,#spn2,#spn3{
+  position: absolute;
+  content: '';
+  background: blue;
+  width: 30px;
+  height: 5px;
+  border-radius: 5px;
+  transition: all 400ms ease;
+  margin-left: 9px;
+  margin-top: 13px;
+  cursor: pointer;
+}
+#spn2 {
+  top: 8px;
+}
+#spn3 {
+  top: 16px;
+}
+#menustilo{
+  display: none;
+}
+#menustilo:checked ~.menup #spn1{
+  transform: rotate(128deg);
+  top: 8px;
+}
+#menustilo:checked ~.menup #spn2{
+  transform: rotate(128deg);
+  top: 8px;
+  background: red;
+}
+#menustilo:checked ~.menup #spn3{
+  transform: rotate(-128deg);
+  top: 8px;
+  background: red;
+}
+/*de aqui es en munu despegable*/
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+nav {
+  margin-top: 65px;
+  position: fixed;
+  background-color: #fff;
+  width: 130px;
+  height: 152px;
+  border-radius: 12px;
+}
+
+a {
+  display: block;
+  padding: 16px;
+  color: black;
+  text-align: center;
+}
+nav{
+  margin-left: -150px;
+  transition: all 0.3s;
+}
+#menustilo:checked ~ nav {
+  margin: 0;
+  margin-top: 65px;
+  box-shadow: 0px 0px 6px #818181;
+  margin-left: 6px;
+
+}
+
+.p1,.p2,.p3 {
+  cursor: none;
+}
+.p1{
+border-radius: 12px 12px 0px 0px;
+border-bottom:  1px solid #818181;
+}
+.p2 {
+  border-bottom: 1px solid #818181;
+}
+.p3{
+  border-radius: 0px 0px 12px 12px;
+}
+/*aqui es lo del titulo header*/
+
+header {
+  position: absolute;
+	width: 100%;
+	top: 0;
+	background-color: #FFFFFF ;
+	border-bottom: 1px solid #e4e4e4;
+	line-height: 56px;
+	box-shadow: 0px 0px 6px #818181;
+}
+h1 {
+  text-align: center;
+}
+/* -------Aqui es lo que ba a poner informavion al dar click------*/
+/*
+
+/*Aqui ba para movil*/
+.Inicio {
+  padding-top: 70px;
+  background: red;
+  padding-bottom: 12px;
+  height: 100%;
+  display: none;
+  transition: all 400ms ease;
+}
+.despues {
+  padding-top: 70px;
+  background: red;
+  padding-bottom: 12px;
+ /* display: none;*/
+ height: 100%;
+}
+.final {
+   padding-top: 70px;
+  background: red;
+  padding-bottom: 12px;
+  height: 100%;
+
+}
+.hola {
+  margin-left: 12px;
+  margin-right: 12px;
+  background: #fff;
+  box-shadow: 0px 0px 6px #818181;
+
+}
+#vel{
+  padding-top: 80px;
+  width: 100%;
+}
+/*Aqui el de pc*/
+.vel2{
+  margin: auto;
+  background: #fff;
+  box-shadow: 0px 0px 6px #818181;
+  width: 80%;
+  display: block;
+}
+
+p {
+  line-height: 1.9em;
+  /*font-size: ;*/
+  width: 75%;
+  margin: auto;
+  background: ;
+}
+/*termina asta aca pc*/
+/*botine que me trae la pagina*/
+.pc-tab> input,
+.pc-tab section > div {
+  display: none;
+}
+
+#libro1:checked ~ section .tab1,
+#libro2:checked ~ section .tab2,
+#libro3:checked ~ section .tab3 {
+  display: block;
+}
+
+
+#libro1:checked ~ nav .tab1 label a,
+#libro2:checked ~ nav .tab2 label a,
+#libro3:checked ~ nav .tab3 label a{
+  color: red;
+ /* background: linear-gradient(#fff, #b8c1c3 );*/
+
+  background: blue;
+}
+/*aqui es el div de las redes soviales
+*/
+
+.social{
+  background-color: blue;
+  margin-top:1% ;
+  width: 100%;
+  height: 9%;
+  position: absolute;
+  border-radius: 5% 5% 0 0;
+}
+/*aqui pruebas con el chexbox cambiar*//*
+.lbl{
+  display: inline-block;
+width: 65px;
+  height: 33px;
+  background: #979797;
+  border-radius: 100px;
+  cursor: pointer;
+  position: relative;
+  transition: .2s;
+}
+ 
+.lbl::after{
+  content: '';
+  display: block;
+  width: 25px;
+  height: 25px;
+  background: #eee;
+  border-radius: 100px;
+  position: absolute;
+  top: 4px;
+  left:4px;
+  transition: .2s;
+  
+}
+ 
+#switch:checked + .lbl::after{
+  left: 36px;
+}
+ 
+#switch:checked + .lbl{
+  background: #00C8B1;
+}
+ 
+#switch{
+  display: none;
+}
+.lbl {
+  cursor: none;
+  position: relative;
+  right: -70%;
+  z-index: 5;
+  
+}
+.apagado{
+  width: 30px;
+  height: 30px;
+}
+*/
+/*Aqui termina*/
